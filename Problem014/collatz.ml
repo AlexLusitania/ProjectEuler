@@ -22,9 +22,9 @@ let rec chain_length2 n =
 
 (* i being the maximum number *)
 let longest_chain_under n =
-	let rec local n i max =
-		if n = 1 then i
+	let rec local n i maxi =
+		if n = 1 then (i,maxi)
 		else let newval = chain_length2 n in
-			if newval > max then local (n-1) n newval
-			else local (n-1) i max
+			if newval > maxi then local (n-1) n newval
+			else local (n-1) i maxi
 	in local n 0 0;;
