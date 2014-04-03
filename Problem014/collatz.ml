@@ -12,6 +12,19 @@ let rec chain_length n =
 	else if n mod 2 = 0 then 1 + chain_length (n/2)
 	     else 1 + chain_length (3*n + 1);;
 
+(* Tail recursive way *)
+let rec chain_length2 n =
+	let rec local n acc =
+		if n = 1 then acc+1
+		else if n mod 2 = 0 then local (n/2) (acc+1)
+			else local (3*n + 1) (acc+1)
+	in local n 0;;
+
 (* i being the maximum number *)
-let rec max_chain i =
-	
+let longest_chain_under n =
+	let rec local n i max =
+		if n = 1 then i
+		else let newval = chain_length2 n in
+			if newval > max then local (n-1) n newval
+			else local (n-1) i max
+	in local n 0 0;;
