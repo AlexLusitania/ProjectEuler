@@ -28,3 +28,5 @@ let longest_chain_under n =
 			if newval > maxi then local (n-1) n newval
 			else local (n-1) i maxi
 	in local n 0 0;;
+
+longest_chain_under 1000000;;

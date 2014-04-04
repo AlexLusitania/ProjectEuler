@@ -21,5 +21,3 @@ let sum_fibo =
 		if (newelem mod 2=0) then local (sum + newelem) y newelem
 		else local sum y newelem
 	in local 2 1 2;;
-
-(* SOLVED ! *)
