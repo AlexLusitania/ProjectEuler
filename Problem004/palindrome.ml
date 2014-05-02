@@ -31,3 +31,5 @@ let biggest_palindrome n =
 		else if (palindrome (x*y) = true) then local x (y-1) (max res (x*y))
 			 else local x (y-1) res
 	in local biggest_number biggest_number 0;;
+
+biggest_palindrome 3;;

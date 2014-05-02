@@ -13,11 +13,13 @@ let fibonacci size =
 	in local (size-2) [1;2] 1 2;;
 
 (* Find the sum of the even-valued terms *)
-let sum_fibo =
+let sum_fibo exc =
 	let rec local sum x y =
 	let newelem = (x+y) in
-	if (newelem >= 4000000) then sum
+	if (newelem >= exc) then sum
 	else 
 		if (newelem mod 2=0) then local (sum + newelem) y newelem
 		else local sum y newelem
 	in local 2 1 2;;
+
+sum_fibo 4000000;;

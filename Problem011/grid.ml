@@ -1,5 +1,5 @@
 (*
-Author : AlexLusitania
+Author : Alexandre Gomes
 Version : 1.0
 Date : 07/01/2014
 Description : In a given 20x20 grid, what is the greatest product of four adjacent numbers in the same direction (up, down, left, right or diagonally) in the 20x20 grid ?

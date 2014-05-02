@@ -1,5 +1,5 @@
 (*
-Author : AlexLusitania
+Author : Alexandre Gomes
 Version : 1.0
 Date : 07/01/2014
 Description : The sum of the primes below 10 is 2+3+5+7 = 17. Find the sum of all the primes below two million.
@@ -21,3 +21,5 @@ let primes_sum x =
 	| i when i>=x -> acc
 	| _ -> if(is_prime i) then local (acc+i) (i+1) else local acc (i+1)
 	in local 0 2;;
+
+primes_sum 2000000;;

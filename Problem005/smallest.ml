@@ -17,4 +17,6 @@ let smallest_multiple x y =
 	let rec local i =
 	if (is_divisible i x y) then i
 	else local (i+y)
-	in local y;;	
+	in local y;;
+
+smallest_multiple 1 20;;

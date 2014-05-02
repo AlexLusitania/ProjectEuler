@@ -1,5 +1,5 @@
 (*
-Author : AlexLusitania
+Author : Alexandre Gomes
 Version : 1.0
 Date : 07/01/2014
 Description : Find the greatest product of five consecutive digits in the 1000-digit number.
@@ -20,3 +20,5 @@ let greatest_x_product x str =
 	| i when (i+x)>(String.length str) -> res
 	| _ -> if (product_str (String.sub str i x) > res) then local (i+1) (product_str (String.sub str i x)) else local (i+1) res
 	in local 0 0;;
+
+greatest_x_product 5 number;;

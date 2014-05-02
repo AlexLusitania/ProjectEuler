@@ -1,5 +1,5 @@
 (*
-Author : AlexLusitania
+Author : Alexandre Gomes
 Version : 1.0
 Date : 07/01/2014
 Description : A pythagorean triplet is a set of three natural numbers, a<b<c, for which, a^2 + b^2 = c^2. For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2. There exists exactly one Pythagorean triplet for which a+b+c = 1000. Find the product abc.
@@ -30,3 +30,5 @@ let triplet sum =
 	| i,j when euc_sum = sum -> list_prod euc
 	| _ -> if (euc_sum > sum) then local (j+2) (j+1) else local (i+1) j
 	in local 2 1;;
+
+triplet 1000;;

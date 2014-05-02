@@ -1,5 +1,5 @@
 (*
-Author : AlexLusitania
+Author : Alexandre Gomes
 Version : 2.0
 Date : 21/10/2013
 Updated : 25/04/2014
@@ -12,3 +12,5 @@ let multiples3_5 n =
 	| _ 		 -> if (i mod 3 = 0) || (i mod 5 = 0) then i + (local (i+1))
 		   											  else local (i+1)
 	in local 0;;
+
+multiples3_5 1000;;

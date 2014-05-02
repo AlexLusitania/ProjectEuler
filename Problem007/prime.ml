@@ -1,5 +1,5 @@
 (*
-Author : AlexLusitania
+Author : Alexandre Gomes
 Version : 1.0
 Date : 07/01/2014
 Description : By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13. What is the 10 001st prime number ?
@@ -32,3 +32,5 @@ let nth_prime n =
 	| p when (p>=n) -> (i-1)
 	| _ -> if(trial_division i) then local (p+1) (i+1) else local p (i+1)
 	in local 1 2;;
+
+nth_prime 10001;;
