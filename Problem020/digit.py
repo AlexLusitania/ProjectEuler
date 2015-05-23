@@ -3,6 +3,7 @@
 
 # Author : Alexandre Pais Gomes
 # Date : 22/05/2015
+
 # Description : Find the sum of the digits in the number 100!
 
 import math

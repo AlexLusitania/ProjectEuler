@@ -3,6 +3,7 @@
 
 # Author : Alexandre Pais Gomes
 # Date : 22/05/2015
+
 # Description : Work out the first ten digits of the one-hundred 50-digits number
 
 x = open("number.txt", "r").read()
