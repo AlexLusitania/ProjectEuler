@@ -4,7 +4,7 @@
 Project Euler is a series of challenging mathematical/computer programming problems. Found out more [here](http://projecteuler.net).
 
 ## Why ?
-I like challenges and it's very fun coding and learning all the mathematics behind the ProjectEuler's challenges.
+When I have some free time and I just feel like challenging myself a bit and cause it's very fun coding and learning all the mathematics behind the ProjectEuler's challenges.
 
 ## How ?
 Depending on the problem and my mood, I may be using :
@@ -13,5 +13,5 @@ Depending on the problem and my mood, I may be using :
 * :snake: Python 3.4 (scripting language),
 * ...
 
-**NB:** I do not pretend all my attempts to be perfect, some of these may even look naive for advanced mathematicians or advanced computer scientist :monkey: 
+**NB:** I do not pretend all my attempts to be perfect, some of these might even look naive for mathematicians or advanced computer scientist :monkey: 
 
