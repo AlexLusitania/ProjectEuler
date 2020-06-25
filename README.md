@@ -1,4 +1,4 @@
-![alt tag](http://projecteuler.net/profile/AlexLusitania.png)
+![alt tag](https://projecteuler.net/profile/LusitanianKing.png)
 
 ## What ?
 [Project Euler](http://projecteuler.net) is a series of challenging mathematical/computer programming problems.
