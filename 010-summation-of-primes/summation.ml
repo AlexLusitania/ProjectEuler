@@ -7,7 +7,7 @@ Description : The sum of the primes below 10 is 2+3+5+7 = 17. Find the sum of al
 
 (* Tests if the given integer is a prime number using the trial division *)
 let is_prime x =
-	let rec local i = 
+	let rec local i =
 		let modulo = (x mod i = 0) in
 		match i with
 		| i when x=1 -> false
@@ -22,4 +22,4 @@ let primes_sum x =
 	| _ -> if(is_prime i) then local (acc+i) (i+1) else local acc (i+1)
 	in local 0 2;;
 
-primes_sum 2000000;;
+print_string (string_of_int (primes_sum 2000000) ^ "\n");;
