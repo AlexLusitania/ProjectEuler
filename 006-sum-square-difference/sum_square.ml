@@ -23,4 +23,4 @@ let square_sum x =
 let haracho x =
 	(square_sum x) -. (sum_square x);;
 
-haracho 100.;;
+print_string (string_of_float (haracho 100.) ^ "\n");;
