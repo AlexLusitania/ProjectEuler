@@ -32,4 +32,4 @@ let biggest_palindrome n =
 			 else local x (y-1) res
 	in local biggest_number biggest_number 0;;
 
-biggest_palindrome 3;;
+print_string (string_of_int (biggest_palindrome 3) ^ "\n");;
