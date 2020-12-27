@@ -29,4 +29,4 @@ let longest_chain_under n =
 			else local (n-1) i maxi
 	in local n 0 0;;
 
-longest_chain_under 1000000;;
+print_string (string_of_int (fst (longest_chain_under 1000000)) ^ "\n");;
