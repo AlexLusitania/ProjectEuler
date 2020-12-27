@@ -19,4 +19,4 @@ let smallest_multiple x y =
 	else local (i+y)
 	in local y;;
 
-smallest_multiple 1 20;;
+print_string (string_of_int (smallest_multiple 1 20) ^ "\n");;
