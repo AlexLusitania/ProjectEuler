@@ -33,4 +33,4 @@ let nth_prime n =
 	| _ -> if(trial_division i) then local (p+1) (i+1) else local p (i+1)
 	in local 1 2;;
 
-nth_prime 10001;;
+print_string (string_of_int (nth_prime 10001) ^ "\n");;
