@@ -13,4 +13,4 @@ let multiples3_5 n =
 		   											  else local (i+1)
 	in local 0;;
 
-print_string (String.concat " " ["sum:"; string_of_int (multiples3_5 1000); "\n"]);;
+print_string (string_of_int (multiples3_5 1000) ^ "\n");;
