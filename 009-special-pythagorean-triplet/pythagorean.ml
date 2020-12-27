@@ -23,7 +23,7 @@ let list_prod list_ =
 	in local 0 1;;
 
 let triplet sum =
-	let rec local i j = 
+	let rec local i j =
 	let euc = euclid_formula i j in
 	let euc_sum = list_sum euc in
 	match i,j with
@@ -31,4 +31,4 @@ let triplet sum =
 	| _ -> if (euc_sum > sum) then local (j+2) (j+1) else local (i+1) j
 	in local 2 1;;
 
-triplet 1000;;
+print_string (string_of_int (triplet 1000) ^ "\n");;
