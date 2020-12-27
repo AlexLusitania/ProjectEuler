@@ -17,9 +17,9 @@ let sum_fibo exc =
 	let rec local sum x y =
 	let newelem = (x+y) in
 	if (newelem >= exc) then sum
-	else 
+	else
 		if (newelem mod 2=0) then local (sum + newelem) y newelem
 		else local sum y newelem
 	in local 2 1 2;;
 
-sum_fibo 4000000;;
+print_string (string_of_int (sum_fibo 4000000) ^ "\n");;
