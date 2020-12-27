@@ -23,4 +23,4 @@ let nb_routes x =
 		else local (i+1) x ((acc * ((2*x)-i))/(i+1))
 	in local 0 x 1;;
 
-nb_routes 20;;
+print_string (string_of_int (nb_routes 20) ^ "\n");;
