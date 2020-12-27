@@ -12,4 +12,4 @@ let largest_factor n =
 		 else local number res (i+1)
 	in local n 1 1;;
 
-largest_factor 600851475143;;
+print_string (string_of_int (largest_factor 600851475143) ^ "\n");;
